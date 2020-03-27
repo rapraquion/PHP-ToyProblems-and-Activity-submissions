@@ -30,13 +30,13 @@
                     <?php echo $portal->getInfo(); ?>
                     <?php foreach($portal->getTechnologyStack() as $techStack){
                             echo "<ul class='list-group'>";
-                                echo "<li class='list-group-item'>". $techStack. '</li>';
+                                echo "<li class='list-group-item'><strong>". $techStack. '</strong></li>';
                             echo "</ul>";
                     }?>
                     <?php echo "Developers: <br />"; ?>
                     <?php foreach($portal->getDevelopers() as $dev){
                             echo "<ol class='list-group'>";
-                                echo "<li class='list-group-item'>" . $dev . '</li>';
+                                echo "<li class='list-group-item'><strong>" . $dev . '</strong></li>';
                             echo "</ol>";
                     }?>
                 </div>
